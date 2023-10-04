@@ -15,9 +15,9 @@ public class Main {
         boolean state = di.getState();
         System.out.println("Nom : " + di.getDeviceName());
         System.out.println("Type : " + di.getDeviceSerialNumber());
-        System.out.println("Nombre d'éntrées' logiques" + di.getDeviceChannelCount(ChannelClass.DIGITAL_INPUT));
-        System.out.println("Nombre de sorties logiques" + di.getDeviceChannelCount(ChannelClass.DIGITAL_OUTPUT));
-        System.out.println("");
+        System.out.println("Nombre d'éntrées' logiques : " + di.getDeviceChannelCount(ChannelClass.DIGITAL_INPUT));
+        System.out.println("Nombre de sorties logiques : " + di.getDeviceChannelCount(ChannelClass.DIGITAL_OUTPUT));
+        System.out.println("Nombre d'entrées numériques : " + di.getDeviceChannelCount(ChannelClass.VOLTAGE_INPUT));
         di.close();
     }
 }
